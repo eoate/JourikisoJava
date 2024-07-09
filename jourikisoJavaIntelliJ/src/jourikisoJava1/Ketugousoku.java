@@ -3,7 +3,7 @@ package jourikisoJava1;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Ketugousok {
+public class Ketugousoku {
     public static void main(String[] args) {
         //結合則が成り立つことの証明を実装する
         HashSet<Integer> numbersS1 = new HashSet<>(Set.of(1,2,3,4,5));
