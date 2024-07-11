@@ -1,6 +1,6 @@
 package jourikisoJava2;
 
-public class NikouenzanTyukihou {
+public class NikouenzanTyutikihou {
     //javaで標準実装されている二項演算子の例として、四則演算子や剰余演算子を挙げる。
     public static void main(String[] args) {
         System.out.println(1+1); //出力:2
