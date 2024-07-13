@@ -2,7 +2,7 @@ package jourikisoJava1;
 import java.util.HashSet;
 import java.util.Set;
 
-public class TajuuSyugou_Shugouzoku_Isuu {
+public class TajuuSyugouShugouzokuIsuu {
 
 	public static void main(String[] args) {
 		//多重集合は集合の中に集合を入れれば実装できる。
