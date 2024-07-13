@@ -19,6 +19,7 @@ public class Kankei_no_Bekijou {
             HashSet<List<Integer>> res = new HashSet<>();
             HashSet<List<Integer>> resB = new HashSet<>(numbersB);
             for(int i = 0; i<n-1; i++) {
+                res.clear();
                 for (List<Integer> listB : resB) {
                     for (List<Integer> list : numbersB) {
                         List<Integer> temp = new ArrayList<>();
@@ -29,6 +30,8 @@ public class Kankei_no_Bekijou {
                         }
                     }
                 }
+                resB.clear();
+                resB.addAll(res);
             }
             return res;
         }
