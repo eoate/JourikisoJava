@@ -8,21 +8,19 @@ public class TyokuwaSyugou {
     public static void main(String[] args) {
         HashSet<Integer> numbersS1 = new HashSet<>(Set.of(1,2,3));
         HashSet<Integer> numbersS2 = new HashSet<>(Set.of(2,4,6));
-        HashSet<ArrayList> numbersS12 = new HashSet<>();
-        ArrayList<Integer> numbersS = new ArrayList<>();
+        HashSet<ArrayList<Integer>> numbersS12 = new HashSet<>();
         for(Integer i : numbersS1){
-            numbersS.clear();
+            ArrayList<Integer> numbersS = new ArrayList<>();
             numbersS.add(i);
             numbersS.add(0);
             numbersS12.add(numbersS);
         }
         for(Integer i : numbersS2){
-            numbersS.clear();
+            ArrayList<Integer> numbersS = new ArrayList<>();
             numbersS.add(i);
             numbersS.add(1);
             numbersS12.add(numbersS);
         }
         System.out.println(numbersS12);
-        System.out.println("これもバグでしょ");
     }
 }
