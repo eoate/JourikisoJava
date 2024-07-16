@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class SaSyugou {
     public static void main(String[] args) {
-        //補集合numbersS1\numbersS2を実装する
+        //差集合numbersS1\numbersS2を実装する
         HashSet<Integer> numbersS1 = new HashSet<>(Set.of(1,2,3,5,7));
         HashSet<Integer> numbersS2 = new HashSet<>(Set.of(1,3,4,5,6));
         HashSet<Integer> numbersS1_2 = new HashSet<>();

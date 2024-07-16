@@ -4,8 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Bekisyugou {
-    public static void main(String[] args) {
-        HashSet<Integer> numbersS = new HashSet<>(Set.of(1,2,3,4));
+
+    public static HashSet<HashSet<Integer>> power(Set<Integer> numbersS){
         HashSet<Integer> numbersSNull = new HashSet<>();
         HashSet<HashSet<Integer>> numbersSA = new HashSet<>(Set.of(numbersSNull));
 
@@ -22,6 +22,11 @@ public class Bekisyugou {
             }
             numbersSA.addAll(numbersSAs);
         }
-        System.out.println(numbersSA);
+        return numbersSA;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(power(Set.of(1,2,3)));
+        //出力:[[], [1], [2], [3], [1, 2], [1, 3], [2, 3], [1, 2, 3]]
     }
 }

@@ -5,19 +5,24 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class TyokusekiSyugou {
-    public static void main(String[] args) {
-        //直積集合numbersS1×numbersS2を実装する
-        HashSet<Integer> numbersS1 = new HashSet<>(Set.of(1,3,5,7,9));
-        HashSet<Integer> numbersS2 = new HashSet<>(Set.of(2,4,6,8));
-        HashSet<ArrayList<Integer>> numbersS12 = new HashSet<>();
-        for(int x : numbersS1){
-            for(int y : numbersS2){
+    public static HashSet<ArrayList<Integer>> directProduct(HashSet<Integer> numbers1, HashSet<Integer> numbers2) {
+        HashSet<ArrayList<Integer>> numbers12 = new HashSet<>();
+        for(int x : numbers1){
+            for(int y : numbers2){
                 ArrayList<Integer> numbersS = new ArrayList<>();
                 numbersS.add(x);
                 numbersS.add(y);
-                numbersS12.add(numbersS);
+                numbers12.add(numbersS);
             }
         }
-        System.out.println(numbersS12);
+        return numbers12;
+    }
+
+    public static void main(String[] args) {
+        //直積集合numbersS1×numbersS2を実装する
+        HashSet<Integer> numbers1 = new HashSet<>(Set.of(1,2));
+        HashSet<Integer> numbers2 = new HashSet<>(Set.of(2,3));
+        System.out.println(directProduct(numbers1, numbers2));
+        //出力:[[2, 2], [1, 2], [2, 3], [1, 3]]
     }
 }

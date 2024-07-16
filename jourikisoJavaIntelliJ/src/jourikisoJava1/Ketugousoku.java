@@ -6,40 +6,15 @@ import java.util.Set;
 public class Ketugousoku {
     public static void main(String[] args) {
         //結合則が成り立つことの証明を実装する
-        HashSet<Integer> numbersS1 = new HashSet<>(Set.of(1,2,3,4,5));
-        HashSet<Integer> numbersS2 = new HashSet<>(Set.of(2,3,4,5,6));
-        HashSet<Integer> numbersS3 = new HashSet<>(Set.of(1,3,5,7,9));
-        HashSet<Integer> numbersS12 = new HashSet<>();
-        HashSet<Integer> numbersS23 = new HashSet<>();
-        HashSet<Integer> numbersS12_3 = new HashSet<>();
-        HashSet<Integer> numbersS1_23 = new HashSet<>();
-        for (Integer i : numbersS1) {
-            if (numbersS2.contains(i)) {
-                numbersS12.add(i);
-            }
-        }
-        for (Integer i : numbersS3) {
-            if (numbersS12.contains(i)) {
-                numbersS12_3.add(i);
-            }
-        }
+        HashSet<Integer> numbers1 = new HashSet<>(Set.of(1,2,3,4,5));
+        HashSet<Integer> numbers2 = new HashSet<>(Set.of(2,3,4,5,6));
+        HashSet<Integer> numbers3 = new HashSet<>(Set.of(1,3,5,7,9));
+        HashSet<Integer> numbers12 = KyotuBubunSyugou.intersection(numbers1, numbers2);
+        HashSet<Integer> numbers23 = KyotuBubunSyugou.intersection(numbers2, numbers3);
+        HashSet<Integer> numbers12_3 = KyotuBubunSyugou.intersection(numbers12, numbers3);
+        HashSet<Integer> numbers1_23 = KyotuBubunSyugou.intersection(numbers1, numbers23);
 
-        for (Integer i : numbersS3) {
-            if (numbersS2.contains(i)) {
-                numbersS23.add(i);
-            }
-        }
-        for (Integer i : numbersS1) {
-            if (numbersS23.contains(i)) {
-                numbersS1_23.add(i);
-            }
-        }
-
-        if(numbersS1_23.equals(numbersS12_3)){
-            System.out.println("結合則は成り立つ");
-        }else{
-            System.out.println("結合則は成り立たない");
-        }
+        if(numbers1_23.equals(numbers12_3))System.out.println("結合則は成り立つ");
         //出力:結合則は成り立つ
     }
 }
