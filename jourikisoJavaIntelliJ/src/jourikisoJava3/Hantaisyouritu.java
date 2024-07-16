@@ -17,7 +17,7 @@ public class Hantaisyouritu {
     public static void main(String[] args) {
         HashSet<List<Integer>> numbersR1 = new HashSet<>(Set.of(Arrays.asList(1,1),Arrays.asList(2,1),Arrays.asList(2,2),Arrays.asList(6,6)));
         HashSet<List<Integer>> numbersR2 = new HashSet<>(Set.of(Arrays.asList(1,1),Arrays.asList(2,1),Arrays.asList(1,2),Arrays.asList(6,6)));
-        System.out.println(isAntiSymmetry(numbersR1));
-        System.out.println(isAntiSymmetry(numbersR2));
+        System.out.println(isAntiSymmetry(numbersR1)); //出力:true
+        System.out.println(isAntiSymmetry(numbersR2)); //出力:false
     }
 }

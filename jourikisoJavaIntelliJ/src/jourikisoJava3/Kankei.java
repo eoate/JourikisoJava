@@ -20,6 +20,6 @@ public class Kankei {
                 }
             }
         }
-        System.out.println(numbersR);
+        System.out.println(numbersR); //出力;[[6, 5], [8, 1], [6, 1], [8, 4], [4, 1], [8, 5], [3, 1], [6, 4]]
     }
 }

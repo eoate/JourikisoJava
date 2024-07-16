@@ -40,8 +40,8 @@ public class Kankei_no_Bekijou {
         HashSet<List<Integer>> numbersB = new HashSet<>(Set.of(Arrays.asList(0,2),Arrays.asList(1,2),Arrays.asList(2,3)));
         HashSet<Integer> numbersA = new HashSet<>(Set.of(0,1,2,3));
 
-        System.out.println(R(numbersA, numbersB, 0));
-        System.out.println(R(numbersA, numbersB, 1));
-        System.out.println(R(numbersA, numbersB, 2));
+        System.out.println(R(numbersA, numbersB, 0)); //出力:[[0, 0], [1, 1], [2, 2], [3, 3]]
+        System.out.println(R(numbersA, numbersB, 1)); //出力:[[2, 3], [1, 2], [0, 2]]
+        System.out.println(R(numbersA, numbersB, 2)); //出力:[[1, 3], [0, 3]]
     }
 }
