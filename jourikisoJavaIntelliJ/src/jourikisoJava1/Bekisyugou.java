@@ -5,15 +5,13 @@ import java.util.Set;
 
 public class Bekisyugou {
 
-    public static HashSet<HashSet<Integer>> power(Set<Integer> numbersS){
+    public static HashSet<Set<Integer>> power(Set<Integer> numbersS){
         HashSet<Integer> numbersSNull = new HashSet<>();
-        HashSet<HashSet<Integer>> numbersSA = new HashSet<>(Set.of(numbersSNull));
-
-        numbersSA.add(numbersSNull);
+        HashSet<Set<Integer>> numbersSA = new HashSet<>(Set.of(numbersSNull));
 
         for(int i = 0; i<numbersS.size(); i++){
             HashSet<HashSet<Integer>> numbersSAs = new HashSet<>();
-            for(HashSet<Integer> numbersSF : numbersSA){
+            for(Set<Integer> numbersSF : numbersSA){
                 for(Integer number : numbersS){
                     HashSet<Integer> numbersSB = new HashSet<>(numbersSF);
                     numbersSB.add(number);

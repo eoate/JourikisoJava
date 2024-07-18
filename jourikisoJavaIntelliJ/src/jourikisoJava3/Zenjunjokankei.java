@@ -1,11 +1,10 @@
 package jourikisoJava3;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
-public class zenjunjokankei {
+public class Zenjunjokankei {
     public static boolean totalOrder(HashSet<Integer> numbersA, HashSet<List<Integer>> numbersR){
         boolean res = true;
         a:for(int i : numbersA){
