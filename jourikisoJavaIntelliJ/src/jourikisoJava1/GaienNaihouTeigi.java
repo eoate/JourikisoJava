@@ -9,9 +9,7 @@ public class GaienNaihouTeigi {
 		ArrayList<Integer> numbersA1 = new ArrayList<>(Arrays.asList(1,4,9,16,25));
 		System.out.println(numbersA1); //出力:[1, 4, 9, 16, 25]
 		ArrayList<Integer> numbersA2 = new ArrayList<>();
-		for(int i=1; i<=5; i++) {
-			numbersA2.add(i*i);
-		}
+		for(int i=1; i<=5; i++) numbersA2.add(i*i);
 		System.out.println(numbersA2); //出力:[1, 4, 9, 16, 25]
 	}
 }
