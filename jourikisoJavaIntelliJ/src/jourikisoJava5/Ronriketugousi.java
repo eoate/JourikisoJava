@@ -1,6 +1,6 @@
 package jourikisoJava5;
 
-public class Ronrikerugousi {
+public class Ronriketugousi {
     public static void main(String[] args){
         boolean a = true;
         boolean b = false;
