@@ -36,5 +36,13 @@ public class Sinritihyou {
                 System.out.println(a + " " + b + " | " + truthValueNumber(implication(truthValue(a), truthValue(b))));
             }
         }
+        System.out.println("同値の真理値表");
+        System.out.println("a b |a⇔b");
+        System.out.println("--------");
+        for(int a = 0; a<=1; a++){
+            for(int b=0; b<=1; b++){
+                System.out.println(a + " " + b + " | " + truthValueNumber(truthValue(a) == truthValue(b)));
+            }
+        }
     }
 }
