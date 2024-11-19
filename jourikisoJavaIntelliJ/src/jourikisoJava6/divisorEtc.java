@@ -35,6 +35,7 @@ public class divisorEtc {
     public static boolean isPrimeNumber(int num){
         return factorization(num).size() == 1;
     }
+    //素因数
     public static ArrayList<Integer> primeFactor(int num){
         ArrayList<Integer> result = new ArrayList<>();
         for(int i:factorization(num)){

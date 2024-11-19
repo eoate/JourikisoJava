@@ -6,6 +6,6 @@ public class recursiveFactorial {
         return reFactorial(num-1)*num;
     }
     public static void main(String[] args){
-        System.out.println(reFactorial(5));
+        System.out.println(reFactorial(7));
     }
 }

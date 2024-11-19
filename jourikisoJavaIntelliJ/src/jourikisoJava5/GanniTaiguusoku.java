@@ -18,6 +18,5 @@ public class GanniTaiguusoku {
         }else{
             System.out.println("対偶則は成り立たない");
         }
-
     }
 }
